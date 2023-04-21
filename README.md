@@ -10,7 +10,7 @@ Esta web se basa en una pagina principal en la que accedemos directamente a un R
 
 ===
 
-`TFG ./
+<pre>TFG ./
 ├─
 │   formu.html
 │   index.html
@@ -29,5 +29,6 @@ Esta web se basa en una pagina principal en la que accedemos directamente a un R
 │       ...
 │
 └───JSON (He guardado una prueba del archivo output)
-        datos.json`
+        datos.json
+</pre>
 
