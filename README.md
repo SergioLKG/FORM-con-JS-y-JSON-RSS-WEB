@@ -8,8 +8,6 @@ Esta web se basa en una pagina principal en la que accedemos directamente a un R
 
 ### **Direcctory tree:**
 
-==
-
 <pre>TFG ./
 ├─
 │   formu.html
