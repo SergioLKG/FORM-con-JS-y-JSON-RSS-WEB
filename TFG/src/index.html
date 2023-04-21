@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- SCRIPTS -->
+    <script src="./assets/rss.js"></script>
+    <!-- METATAGS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logojfif.jfif" />
+    <title>PFG</title>
+  </head>
+  <body onload="leerDatos('contenido');">
+    <aside class="left">
+      <a href="./index.html">
+        <img id="logo" src="./img/logojfif.png" alt="Logo pagina TFG"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./formu.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <aside class="right">
+      <a href="https://cnnespanol.cnn.com/category/espana/"
+        ><img id="banner" src="img/CNNbanner.png" alt=""
+      /></a>
+      <a
+        class="aVDP"
+        href="https://www.educa2.madrid.org/web/centro.ies.lapaz.alcobendas"
+        ><img
+          id="logoVDP"
+          src="./img/PazLOGO.png"
+          alt="Logo IES Virgen de la paz"
+      /></a>
+      <ul class="icos">
+        <img src="./img/cnn-logo.png" alt="" /><img
+          src="img/rss-logo.png"
+          alt=""
+        />
+      </ul>
+    </aside>
+    <main>
+      <h1 id="TITLE">RSS CNN</h1>
+      <div class="container">
+        <div id="contenido"></div>
+      </div>
+      <h1>
+        Si no se esta mostrando nada, lea el README.txt en busca de ayuda.
+        Posiblemente debas iniciar la pagina desde el Apache de XAMPP
+      </h1>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,529 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 1vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  line-height: 1.5;
+  background-color: rgba(221, 204, 204, 0.7);
+  overflow-x: hidden;
+}
+
+main a {
+  color: #333;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  min-height: 15vh;
+  background-color: #efefef;
+  padding: 14px;
+  display: block;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+aside.left {
+  text-align: center;
+  font-weight: bold;
+  left: 0;
+}
+
+aside.right {
+  right: 0;
+  text-align: center;
+}
+
+#logo {
+  padding: 0;
+  margin: auto;
+  max-width: 90%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+#logoVDP {
+  margin: auto;
+  max-width: 60%;
+  display: inline;
+  position: absolute;
+  left: 20%;
+  top: 80%;
+}
+
+.icos img {
+  max-width: 15%;
+  max-height: 20%;
+  margin-left: 2vh;
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.icos img:nth-child(2) {
+  left: 60%;
+  top: 95%;
+}
+
+.icos img:nth-child(1) {
+  left: 25%;
+  top: 95%;
+}
+
+img#banner {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+main {
+  margin: 0 auto;
+  width: 70%;
+}
+
+main > div {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+nav ul {
+  max-width: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15%;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 5px;
+  background-color: rgba(161, 161, 161, 0.4);
+  color: #333;
+  text-decoration: none;
+  border: 3px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  transition-duration: 0.3s;
+  border: 3px solid #333;
+  background-color: #333;
+  color: #ccc;
+  border-radius: 12px;
+}
+
+/* ESTILOS MAIN */
+
+.container {
+  /* text-align: center; */
+  margin: 0 auto;
+  width: 100%;
+}
+
+main > div {
+  max-width: 90%;
+  text-align: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main div video {
+  width: auto;
+  min-width: 80%;
+  outline: 8px double rgba(133, 133, 133, 0.2);
+  border-radius: 20px;
+}
+
+main div img {
+  width: auto;
+  min-width: 30%;
+  max-width: 80%;
+  display: inline;
+  margin: 0 auto;
+  border-radius: 20px;
+  outline: 8px double rgba(133, 133, 133, 0.2);
+}
+
+main div h1,
+main div h2,
+main div h3,
+main div h4 {
+  margin-bottom: 2vh;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-top: 2px rgba(133, 133, 133, 0.2) solid;
+  padding-top: 2vh;
+}
+
+main div p {
+  text-align: justify;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  margin-bottom: -2vh;
+  padding-bottom: 0;
+  font-size: 1.2vw;
+}
+
+#TITLE {
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* FORMULARIO */
+
+#formuMain {
+  margin-top: 5%;
+}
+
+#formu h2 {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+
+#formu {
+  background: rgb(161, 161, 161);
+  background: linear-gradient(
+    143deg,
+    rgba(230, 202, 202, 0.5) 0%,
+    rgba(178, 178, 178, 0.2) 50%,
+    rgba(161, 161, 161, 0.4) 100%
+  );
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#formu form {
+  display: inline-block;
+  text-align: center;
+}
+
+form label {
+  display: table;
+  text-align: center;
+}
+
+form input.textIn {
+  width: 25vw;
+  height: 2vh;
+  border-radius: 20px;
+  border: 5px transparent solid;
+  outline: none;
+  margin-top: 15px;
+  padding: 0.8vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+form input.sendIn {
+  width: 25vw;
+  border-radius: 20px;
+  border: 5px transparent solid;
+  padding: 0.8vw;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+form input.sendIn:hover {
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  outline: 8px double rgba(133, 133, 133, 0.501);
+  background-color: #efeeee;
+}
+
+form input:focus {
+  outline: 6px double rgba(133, 133, 133, 0.501);
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+}
+
+form textarea {
+  width: 25vw;
+  height: 16vh;
+  outline: none;
+  border: 1px transparent solid;
+  padding: 0.8vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.1vh;
+  border-radius: 12px;
+}
+
+form textarea:focus {
+  outline: 6px double rgba(133, 133, 133, 0.501);
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.select #sexo {
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #929090;
+  font-size: 1em;
+  color: #333;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.select #sexo:hover {
+  outline: 8px double rgba(133, 133, 133, 0.501);
+}
+
+.select {
+  width: 100%;
+  margin-top: 15px;
+  height: 0;
+}
+
+#sexo::-ms-expand {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  nav > ul {
+    margin: 0;
+  }
+
+  body {
+    font-size: 2.4vw;
+  }
+
+  aside {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    clear: both;
+  }
+
+  aside.left {
+    float: none;
+  }
+
+  aside.right {
+    float: none;
+    display: none;
+  }
+
+
+  main div p {
+    text-align: justify;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+    margin-bottom: -2vh;
+    padding-bottom: 0;
+    font-size: 2vw;
+  }  
+
+  #TITLE {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  #logo {
+    padding: 0;
+    margin: auto;
+    width: auto;
+    max-width: 16vh;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+  }
+
+  #logoVDP {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main > div {
+    width: 100%;
+    margin-right: -20px;
+  }
+
+  main video {
+    max-width: 50vh;
+  }
+
+  main img {
+    max-width: 50vh;
+  }
+
+  /* FORMULARIO */
+
+  #formuMain {
+    margin-top: 5%;
+  }
+
+  #formu h2 {
+    width: 100%;
+    font-weight: bolder;
+    font-size: 3vw;
+    margin-bottom: 20px;
+  }
+
+  #formu {
+    background: rgb(161, 161, 161);
+    background: linear-gradient(
+      143deg,
+      rgba(230, 202, 202, 0.5) 0%,
+      rgba(178, 178, 178, 0.2) 50%,
+      rgba(161, 161, 161, 0.4) 100%
+    );
+    border-radius: 25px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  #formu form {
+    display: inline-block;
+    text-align: center;
+  }
+
+  form label {
+    display: table;
+    text-align: center;
+  }
+
+  form input.textIn {
+    width: 55vw;
+    height: 2vh;
+    border-radius: 20px;
+    border: 5px transparent solid;
+    outline: none;
+    margin-top: 15px;
+    padding: 0.8vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+  }
+
+  form input.sendIn {
+    width: 55vw;
+    border-radius: 20px;
+    border: 5px transparent solid;
+    padding: 0.8vw;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  form input.sendIn:hover {
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    outline: 8px double rgba(133, 133, 133, 0.501);
+    background-color: #efeeee;
+  }
+
+  form input:focus {
+    outline: 6px double rgba(133, 133, 133, 0.501);
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+  }
+
+  form textarea {
+    width: 55vw;
+    height: 16vh;
+    outline: none;
+    border: 1px transparent solid;
+    padding: 0.8vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.1vh;
+    border-radius: 12px;
+  }
+
+  form textarea:focus {
+    outline: 6px double rgba(133, 133, 133, 0.501);
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+  }
+
+  .select #sexo {
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #929090;
+    font-size: 1em;
+    color: #333;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+  }
+
+  .select #sexo:hover {
+    outline: 6px double rgba(133, 133, 133, 0.501);
+  }
+
+  .select {
+    width: 100%;
+    margin-top: 15px;
+    height: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dcc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
